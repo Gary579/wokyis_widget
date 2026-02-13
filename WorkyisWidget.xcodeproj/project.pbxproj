@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D35AD7761F909468A0F28D4 /* ClockPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A365B03F601D032B70E754DB /* ClockPanel.swift */; };
+		207EF08E645A7E5A2CC01B38 /* SystemStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864DE09E15137A9C95EB0E88 /* SystemStats.swift */; };
+		3A213D33E519A4347BAFD992 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813355ADE4D87E71B101714D /* WeatherService.swift */; };
+		48BDDBB1F36CC282973CCB7C /* ScanlineOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87420F26D84FDF48E936156 /* ScanlineOverlay.swift */; };
+		4C4E66E8DC2B39614CF8C353 /* WorkyisWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4651B92D16E8336E35015086 /* WorkyisWidgetApp.swift */; };
+		5F2B9BAF1D56694C1493CD81 /* WeatherPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B0FCE5C295B8278722735B /* WeatherPanel.swift */; };
+		665D87E06D1185D33E610B32 /* DisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CD01A312DA9C8670C07E1 /* DisplayManager.swift */; };
+		7A53E03B483A2D7A3DE04E73 /* NowPlayingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9CEB50E8E4C51CA5C22EF0 /* NowPlayingInfo.swift */; };
+		7FC8A98FC25559EDFAD57D59 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F53D4AABC1F7322626963 /* WeatherData.swift */; };
+		89F0A85FA0E45609107D8ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588AB729A6416C3B1AB3F1A6 /* AppDelegate.swift */; };
+		983ACEC036F873E1E8171B24 /* SystemMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D05DFDC4275EC2AEEC5C74 /* SystemMonitor.swift */; };
+		A1346601BD110B67BC920092 /* RetroGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7099BB5F1E58DFF239E12 /* RetroGauge.swift */; };
+		B1266645015DB1264614D637 /* CRTBezel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2026756FDD80C66F82F47BBE /* CRTBezel.swift */; };
+		BC0CD50AFEBFC91EB7D7FA9F /* SystemMonitorPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4855EFABBAA199263D5765 /* SystemMonitorPanel.swift */; };
+		C921371DB3D48355D02585FA /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5976DC2A6F6BFDC1A9FED0EE /* Secrets.swift */; };
+		D367FF538EA8CD4DD233E6FC /* CRTTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4228B7712F73B7D987A3AD /* CRTTheme.swift */; };
+		DD50A0527C3C3500527620A7 /* CRTEffect.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0384086B9F6656AF4508A5D8 /* CRTEffect.metal */; };
+		E34DF973EFB9B90BE9E1908C /* MachHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3846ED8D9542744AAB1F39 /* MachHelpers.swift */; };
+		E3C2C552FDFAA5C1F30E011D /* NowPlayingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA106CAC6393D119D1B7004 /* NowPlayingService.swift */; };
+		EAE6C42DDF7AE7F976F36360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D05254D07AE158B51B3007 /* Assets.xcassets */; };
+		FB5C4A36127852122CB64767 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70DAE7DE51F0AE6FF0FB3B /* DashboardView.swift */; };
+		FC1B2DAAB767C449AB5DCAD4 /* NowPlayingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8E36A2BF7705F38355175A /* NowPlayingPanel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0384086B9F6656AF4508A5D8 /* CRTEffect.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CRTEffect.metal; sourceTree = "<group>"; };
+		0C8E36A2BF7705F38355175A /* NowPlayingPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingPanel.swift; sourceTree = "<group>"; };
+		1F4228B7712F73B7D987A3AD /* CRTTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRTTheme.swift; sourceTree = "<group>"; };
+		2026756FDD80C66F82F47BBE /* CRTBezel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRTBezel.swift; sourceTree = "<group>"; };
+		22D05DFDC4275EC2AEEC5C74 /* SystemMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitor.swift; sourceTree = "<group>"; };
+		2BC7099BB5F1E58DFF239E12 /* RetroGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroGauge.swift; sourceTree = "<group>"; };
+		3D4855EFABBAA199263D5765 /* SystemMonitorPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitorPanel.swift; sourceTree = "<group>"; };
+		43E3EFAD92643E9F2263B7FA /* WorkyisWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkyisWidget.entitlements; sourceTree = "<group>"; };
+		4651B92D16E8336E35015086 /* WorkyisWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkyisWidgetApp.swift; sourceTree = "<group>"; };
+		4E3846ED8D9542744AAB1F39 /* MachHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachHelpers.swift; sourceTree = "<group>"; };
+		588AB729A6416C3B1AB3F1A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5976DC2A6F6BFDC1A9FED0EE /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		6128D1B6D4C8B0CFDE143448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		639CD01A312DA9C8670C07E1 /* DisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayManager.swift; sourceTree = "<group>"; };
+		68B0FCE5C295B8278722735B /* WeatherPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPanel.swift; sourceTree = "<group>"; };
+		6D9CEB50E8E4C51CA5C22EF0 /* NowPlayingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingInfo.swift; sourceTree = "<group>"; };
+		7132CA05E1740856841D068A /* WorkyisWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkyisWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		813355ADE4D87E71B101714D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		864DE09E15137A9C95EB0E88 /* SystemStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemStats.swift; sourceTree = "<group>"; };
+		94D05254D07AE158B51B3007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		964F53D4AABC1F7322626963 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		A365B03F601D032B70E754DB /* ClockPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockPanel.swift; sourceTree = "<group>"; };
+		ABA106CAC6393D119D1B7004 /* NowPlayingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingService.swift; sourceTree = "<group>"; };
+		E87420F26D84FDF48E936156 /* ScanlineOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanlineOverlay.swift; sourceTree = "<group>"; };
+		EE70DAE7DE51F0AE6FF0FB3B /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		368383FC5A5BCE578D20275A = {
+			isa = PBXGroup;
+			children = (
+				88CAF76565B52572A25B14BE /* WorkyisWidget */,
+				472642BDF3734558E7F52BED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		472642BDF3734558E7F52BED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7132CA05E1740856841D068A /* WorkyisWidget.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C6B30512B743ECB231529B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE70DAE7DE51F0AE6FF0FB3B /* DashboardView.swift */,
+				578F26830C92450C99B9FD8B /* Components */,
+				71954750DE3D682C813CAA25 /* Panels */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E22D6F2567B18210B8422FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				588AB729A6416C3B1AB3F1A6 /* AppDelegate.swift */,
+				6128D1B6D4C8B0CFDE143448 /* Info.plist */,
+				43E3EFAD92643E9F2263B7FA /* WorkyisWidget.entitlements */,
+				4651B92D16E8336E35015086 /* WorkyisWidgetApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		578F26830C92450C99B9FD8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2026756FDD80C66F82F47BBE /* CRTBezel.swift */,
+				2BC7099BB5F1E58DFF239E12 /* RetroGauge.swift */,
+				E87420F26D84FDF48E936156 /* ScanlineOverlay.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5D457888DC2A2D77FDBB7F57 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5976DC2A6F6BFDC1A9FED0EE /* Secrets.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		71954750DE3D682C813CAA25 /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				A365B03F601D032B70E754DB /* ClockPanel.swift */,
+				0C8E36A2BF7705F38355175A /* NowPlayingPanel.swift */,
+				3D4855EFABBAA199263D5765 /* SystemMonitorPanel.swift */,
+				68B0FCE5C295B8278722735B /* WeatherPanel.swift */,
+			);
+			path = Panels;
+			sourceTree = "<group>";
+		};
+		7559C7923B1DC085B6C532B2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1F4228B7712F73B7D987A3AD /* CRTTheme.swift */,
+				4E3846ED8D9542744AAB1F39 /* MachHelpers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		88CAF76565B52572A25B14BE /* WorkyisWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4E22D6F2567B18210B8422FF /* App */,
+				5D457888DC2A2D77FDBB7F57 /* Config */,
+				BBFD16A482CD2D58602E6A6E /* Models */,
+				D9B139DED62DEFED48EB7EE6 /* Resources */,
+				D597C1191F464178BE088819 /* Services */,
+				F834E088C571A4C7840526E2 /* Shaders */,
+				7559C7923B1DC085B6C532B2 /* Utilities */,
+				4C6B30512B743ECB231529B5 /* Views */,
+			);
+			path = WorkyisWidget;
+			sourceTree = "<group>";
+		};
+		BBFD16A482CD2D58602E6A6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D9CEB50E8E4C51CA5C22EF0 /* NowPlayingInfo.swift */,
+				864DE09E15137A9C95EB0E88 /* SystemStats.swift */,
+				964F53D4AABC1F7322626963 /* WeatherData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D597C1191F464178BE088819 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				639CD01A312DA9C8670C07E1 /* DisplayManager.swift */,
+				ABA106CAC6393D119D1B7004 /* NowPlayingService.swift */,
+				22D05DFDC4275EC2AEEC5C74 /* SystemMonitor.swift */,
+				813355ADE4D87E71B101714D /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D9B139DED62DEFED48EB7EE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94D05254D07AE158B51B3007 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F834E088C571A4C7840526E2 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0384086B9F6656AF4508A5D8 /* CRTEffect.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8543B47B33FA6A6857E33E4 /* WorkyisWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD081760AF612CFA246E6225 /* Build configuration list for PBXNativeTarget "WorkyisWidget" */;
+			buildPhases = (
+				27A8D5A05EAE5EC882872E7C /* Sources */,
+				0F029CF29F6A63AD8B972C78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorkyisWidget;
+			packageProductDependencies = (
+			);
+			productName = WorkyisWidget;
+			productReference = 7132CA05E1740856841D068A /* WorkyisWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DAF66A4011742FA37D2829D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D8543B47B33FA6A6857E33E4 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D0352A7FF62E1DAFB1A253B9 /* Build configuration list for PBXProject "WorkyisWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 368383FC5A5BCE578D20275A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8543B47B33FA6A6857E33E4 /* WorkyisWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F029CF29F6A63AD8B972C78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE6C42DDF7AE7F976F36360 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27A8D5A05EAE5EC882872E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F0A85FA0E45609107D8ECE /* AppDelegate.swift in Sources */,
+				B1266645015DB1264614D637 /* CRTBezel.swift in Sources */,
+				DD50A0527C3C3500527620A7 /* CRTEffect.metal in Sources */,
+				D367FF538EA8CD4DD233E6FC /* CRTTheme.swift in Sources */,
+				1D35AD7761F909468A0F28D4 /* ClockPanel.swift in Sources */,
+				FB5C4A36127852122CB64767 /* DashboardView.swift in Sources */,
+				665D87E06D1185D33E610B32 /* DisplayManager.swift in Sources */,
+				E34DF973EFB9B90BE9E1908C /* MachHelpers.swift in Sources */,
+				7A53E03B483A2D7A3DE04E73 /* NowPlayingInfo.swift in Sources */,
+				FC1B2DAAB767C449AB5DCAD4 /* NowPlayingPanel.swift in Sources */,
+				E3C2C552FDFAA5C1F30E011D /* NowPlayingService.swift in Sources */,
+				A1346601BD110B67BC920092 /* RetroGauge.swift in Sources */,
+				48BDDBB1F36CC282973CCB7C /* ScanlineOverlay.swift in Sources */,
+				C921371DB3D48355D02585FA /* Secrets.swift in Sources */,
+				983ACEC036F873E1E8171B24 /* SystemMonitor.swift in Sources */,
+				BC0CD50AFEBFC91EB7D7FA9F /* SystemMonitorPanel.swift in Sources */,
+				207EF08E645A7E5A2CC01B38 /* SystemStats.swift in Sources */,
+				7FC8A98FC25559EDFAD57D59 /* WeatherData.swift in Sources */,
+				5F2B9BAF1D56694C1493CD81 /* WeatherPanel.swift in Sources */,
+				3A213D33E519A4347BAFD992 /* WeatherService.swift in Sources */,
+				4C4E66E8DC2B39614CF8C353 /* WorkyisWidgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0BA76C6EFFDD09825F03ECA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		C31F7AD9CCDD75F6AC96CFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		D55B3BAEDADBFC0D3620763C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WorkyisWidget/App/WorkyisWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorkyisWidget/App/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				METAL_LIBRARY_OUTPUT_DIR = "$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.workyis.widget;
+				PRODUCT_NAME = WorkyisWidget;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+			};
+			name = Debug;
+		};
+		DFF5586E92250386FC3C27D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WorkyisWidget/App/WorkyisWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorkyisWidget/App/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				METAL_LIBRARY_OUTPUT_DIR = "$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.workyis.widget;
+				PRODUCT_NAME = WorkyisWidget;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0352A7FF62E1DAFB1A253B9 /* Build configuration list for PBXProject "WorkyisWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BA76C6EFFDD09825F03ECA9 /* Debug */,
+				C31F7AD9CCDD75F6AC96CFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FD081760AF612CFA246E6225 /* Build configuration list for PBXNativeTarget "WorkyisWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D55B3BAEDADBFC0D3620763C /* Debug */,
+				DFF5586E92250386FC3C27D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DAF66A4011742FA37D2829D /* Project object */;
+}

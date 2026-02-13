@@ -1,0 +1,45 @@
+name: WorkyisWidget
+options:
+  bundleIdPrefix: com.workyis
+  deploymentTarget:
+    macOS: "15.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+  defaultConfig: Debug
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "15.0"
+
+targets:
+  WorkyisWidget:
+    type: application
+    platform: macOS
+    sources:
+      - path: WorkyisWidget
+        excludes:
+          - Resources/Preview Content
+          - Config/Secrets.example.swift
+    resources:
+      - path: WorkyisWidget/Resources/Assets.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.workyis.widget
+        PRODUCT_NAME: WorkyisWidget
+        INFOPLIST_FILE: WorkyisWidget/App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: WorkyisWidget/App/WorkyisWidget.entitlements
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: true
+        INFOPLIST_KEY_LSUIElement: true
+        SWIFT_STRICT_CONCURRENCY: minimal
+        MTL_ENABLE_DEBUG_INFO: true
+        METAL_LIBRARY_OUTPUT_DIR: "$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)"
+    info:
+      path: WorkyisWidget/App/Info.plist
+      properties:
+        LSUIElement: true
+        CFBundleName: WorkyisWidget
+        CFBundleDisplayName: Workyis Widget
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
