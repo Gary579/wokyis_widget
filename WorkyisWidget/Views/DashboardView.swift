@@ -33,6 +33,7 @@ struct DashboardView: View {
                 BottomBar(
                     symbolName: weatherService.symbolName,
                     temperature: weatherService.temperature,
+                    rainProbability: weatherService.rainProbability,
                     lastError: weatherService.lastError,
                     isLoading: weatherService.isLoading
                 )
@@ -64,6 +65,7 @@ struct DashboardView: View {
 struct BottomBar: View {
     var symbolName: String
     var temperature: String
+    var rainProbability: String
     var lastError: String?
     var isLoading: Bool
 
@@ -96,7 +98,21 @@ struct BottomBar: View {
                         .font(.system(size: 28))
                         .foregroundColor(CRTTheme.phosphorAmber)
                 } else {
-                    HStack(spacing: 12) {
+                    HStack(spacing: 16) {
+                        // 降雨機率
+                        HStack(spacing: 4) {
+                            Image(systemName: "drop.fill")
+                                .font(.system(size: 20))
+                                .foregroundColor(CRTTheme.phosphorGreen)
+                                .phosphorGlow(CRTTheme.phosphorGreen, radius: 2)
+
+                            Text(rainProbability)
+                                .font(.system(size: 24, weight: .medium, design: .monospaced))
+                                .foregroundColor(CRTTheme.phosphorGreen)
+                                .phosphorGlow(CRTTheme.phosphorGreen, radius: 2)
+                        }
+
+                        // 天氣圖示 + 溫度
                         Image(systemName: symbolName)
                             .font(.system(size: 28))
                             .foregroundColor(CRTTheme.phosphorGreen)

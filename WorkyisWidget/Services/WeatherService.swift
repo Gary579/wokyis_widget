@@ -5,6 +5,7 @@ import Foundation
 final class WeatherService {
     var temperature: String = "--"
     var symbolName: String = "cloud.fill"     // SF Symbol 名稱
+    var rainProbability: String = "--%"       // 降雨機率
     var isLoading: Bool = true
     var lastError: String?
 
@@ -44,31 +45,44 @@ final class WeatherService {
             return
         }
 
-        let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&units=metric&lang=zh_tw"
+        let weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&units=metric&lang=zh_tw"
+        let forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&units=metric&cnt=1"
 
-        guard let url = URL(string: urlString) else {
+        guard let wURL = URL(string: weatherURL),
+              let fURL = URL(string: forecastURL) else {
             lastError = "無效的 URL"
             isLoading = false
             return
         }
 
         do {
-            let (data, response) = try await URLSession.shared.data(from: url)
+            // 同時抓 current weather + forecast
+            async let weatherTask = URLSession.shared.data(from: wURL)
+            async let forecastTask = URLSession.shared.data(from: fURL)
 
-            guard let httpResponse = response as? HTTPURLResponse,
+            let (weatherData, weatherResponse) = try await weatherTask
+            let (forecastData, _) = try await forecastTask
+
+            guard let httpResponse = weatherResponse as? HTTPURLResponse,
                   httpResponse.statusCode == 200 else {
                 lastError = "API 回應錯誤"
                 isLoading = false
                 return
             }
 
-            let owmResponse = try JSONDecoder().decode(OWMResponse.self, from: data)
+            let owmResponse = try JSONDecoder().decode(OWMResponse.self, from: weatherData)
 
             // 溫度
             temperature = String(format: "%.0f°", owmResponse.main.temp)
 
             // 將 OWM icon code 轉為 SF Symbol
             symbolName = owmIconToSFSymbol(owmResponse.weather.first?.icon ?? "")
+
+            // 降雨機率（從 forecast 取）
+            if let forecast = try? JSONDecoder().decode(OWMForecastResponse.self, from: forecastData),
+               let firstItem = forecast.list.first {
+                rainProbability = String(format: "%.0f%%", firstItem.pop * 100)
+            }
 
             isLoading = false
             lastError = nil

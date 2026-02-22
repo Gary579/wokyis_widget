@@ -92,7 +92,7 @@ struct WeatherData {
     }
 }
 
-// MARK: - OpenWeatherMap API 回應模型
+// MARK: - OpenWeatherMap Current Weather API 回應模型
 struct OWMResponse: Codable {
     let main: OWMMain
     let weather: [OWMWeather]
@@ -113,4 +113,13 @@ struct OWMWeather: Codable {
 struct OWMWind: Codable {
     let speed: Double
     let deg: Double?
+}
+
+// MARK: - OpenWeatherMap Forecast API 回應模型（取降雨機率）
+struct OWMForecastResponse: Codable {
+    let list: [OWMForecastItem]
+}
+
+struct OWMForecastItem: Codable {
+    let pop: Double  // 降雨機率 0.0 ~ 1.0
 }

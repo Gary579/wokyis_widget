@@ -10,7 +10,7 @@
 
 - 🖥️ **CRT 復古風格** — 磷光綠文字、掃描線效果、CRT 外框邊框
 - ⏰ **巨大時鐘** — Futura Condensed ExtraBold 字體，含秒數顯示
-- 🌤️ **即時天氣** — 透過 OpenWeatherMap API 顯示當前天氣圖示與溫度
+- 🌤️ **即時天氣** — 透過 OpenWeatherMap API 顯示天氣圖示、溫度與降雨機率
 - 📺 **全螢幕覆蓋** — 啟動即全螢幕，隱藏 menu bar 與 Dock
 - 🔌 **自動偵測螢幕** — 偵測 Wokyis 外接螢幕，自動定位顯示
 - 🚫 **零外部依賴** — 純 Swift / SwiftUI，不需任何第三方套件
@@ -23,7 +23,7 @@
 │              22:30:45                │
 │                                      │
 │──────────────────────────────────────│
-│ 2025年02月13日 星期四      ☀️ 18°    │
+│ 2025年02月13日 星期四  💧12%  ☀️ 18° │
 └──────────────────────────────────────┘
 ```
 
@@ -110,7 +110,7 @@ WorkyisWidget/
 │       ├── CRTBezel.swift        # CRT 外框
 │       └── ScanlineOverlay.swift # 掃描線效果
 ├── Services/
-│   ├── WeatherService.swift      # OpenWeatherMap API 服務
+│   ├── WeatherService.swift      # OpenWeatherMap API 服務（天氣 + 降雨機率）
 │   └── DisplayManager.swift      # 外接螢幕偵測
 ├── Utilities/
 │   ├── CRTTheme.swift            # 主題色彩與磷光 glow 效果
